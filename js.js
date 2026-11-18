@@ -38,17 +38,17 @@ function ex(n){
             do{
                 num = parseInt(prompt("Введите объем флешки в Гб: "));
             } while(!(num > 0))
-            alert("Столько файлов размером в 820 Мб помещается на флешку = " + ((num*mb)/820) + "mb")
+            alert("Столько файлов размером в 820 Мб помещается на флешку = " + (parseInt((num*mb)/820)))
             break
         
         case 6:
             do{
                 num = parseInt(prompt("Введите пятизначное число: "));
-            } while(!(num > 9999 && num2 < 100000))
-            num = String(num)
+            } while(!(num > 9999 && num < 100000))
+            num = num.toString()
             num1 = num[0]
             num2 = num.slice(1)
-            alert(num1 + num2)
+            alert(num2+num1)
             break
         
         case 7:
